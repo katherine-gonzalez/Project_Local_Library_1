@@ -1,8 +1,8 @@
 const { findAuthorById } = require("./books");
 
 function findAccountById(accounts, id) {
-  let result = accounts.filter((account) => account.id === id);
-  return result[0];
+  let result = accounts.find((account) => account.id === id);
+  return result;
 }
 
 function sortAccountsByLastName(accounts) {
